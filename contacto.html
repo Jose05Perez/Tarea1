@@ -1,0 +1,104 @@
+
+    <html lang="en">
+    <head>
+        <title>Document</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/estilos3.css">
+        <link rel="stylesheet" type="text/css" href="css/fonts.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    </head>
+    <body>
+    <header>
+            <a name="1"></a>
+        <div id=" cabecera">
+        <div class="logo">
+                <img src="img/jce.png">
+        </div>
+        </div>
+        <nav>   
+            <ul>
+                <li><a href ="prueba.html"><span class ="uno"> <i class= "icon icon-home "> </i> </span>Inicio</a></li>
+                <li><a href ="nosotros.html"><span class ="dos"> <i class= "icon icon-info"> </i> </span>Sobre nosotros</a>
+                <ul>
+                    <li><a href="nosotros.html">¿Quiénes somos?</a></li>
+                    <li><a href="nosotros.html">Mision y Vision</a></li>
+                    <li><a href="nosotros.html">Nuestros valores</a></li>
+                </ul>
+                </li>
+                <li><a href ="registro.html"><span class ="tres"> <i class= "icon icon-registro"> </i> </span>Servicios</a>
+                
+                </li>
+                <li><a href ="contacto.html"><span class ="cinco"> <i class= "icon icon-libro"> </i> </span>Contactos</a></li>
+            </ul>
+        </nav>
+        <hr size="2px" color="#979A9A">
+    </header>
+
+
+    <div class="contenedor">
+            <span class ="enca"><a name ="1"> Nuestros contactos</span></a>
+        
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="contenedor1">
+                <span class ="enca1"><a name ="1"> Mapa de nuestra ubicacion</span></a>
+            </div>
+        <br>
+       
+    <div class="contenido">
+    <section>
+        <div class="cuerpo">
+        
+        <p>Estamos ubicado en Av. 27 de Febrero esquina Av. Luperón, Zona Industrial de Herrera, Santo Domingo, D.N.  </p>
+        </div>
+    </section>
+    </div>
+    </div>
+    <div id="divMap" class="map map-home" style="margin:10px 0 10px 0;height:400px;border:solid 5px white;width:90%;margin-left:auto;margin-right:auto;" ></div>
+        <script>
+                var post = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                    x = L.tileLayer(post, {maxZoom: 21});
+                var map = L.map('divMap').setView([18.449414, -69.976258],18.5).addLayer(x);
+                
+                L.marker([18.449414, -69.976258])
+                            .addTo(map)
+                            .bindPopup('Junta central electoral (JCE)');
+            </script>
+    <br>
+    <br>
+
+
+    <div class="contenedor1">
+            <span class ="enca1"><a name ="1"> Redes Sociales y telefonos</span></a>
+        </div>
+    <br>
+    <br>
+    <div class="red">
+    <Table> 
+        <tr>   
+            
+            <td>
+                <ul> 
+                    <li align="justify"><i class= "icon icon-phone"> </i> Telefono:(809) 539-5419</li>
+                    <li align="justify"><i class= "icon  icon-facebook"> </i> Facebook: Junta central electoral</li>
+                    <li align="justify"><i class= "icon icon-instagram"> </i> Instagram: @juntacentral </li>
+                    <li align="justify"><i class= "icon icon-twitter"> </i> Twiter: @juntacentral</li>
+                    <li align="justify"><i class= "icon icon-envelop"> </i> Email: acceso_informacion@jce.gob.do </li>
+                </td>
+            <td><img src="img/quienes.png" alt=""></td>
+
+    </tr> 
+    </ul>
+    </Table> 
+    </div>
+    <footer><p>©Junta Central Electoral | Derechos reservados| GOB | <a href="#1">Subir </a></p><left><p><i class= "icon icon-twitter"> </i><i class= "icon icon-phone"></i> <i class= "icon icon-instagram"> </i><i class= "icon  icon-facebook"></i></p><left>
+
+    </footer>
+
+    </body>
+    </html>

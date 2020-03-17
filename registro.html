@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="css/estilos5.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+</head>
+<body>
+   <header>
+        <a name="1"></a>
+       <div id=" cabecera">
+       <div class="logo">
+            <img src="img/jce.png">
+       </div>
+       </div>
+    <nav>   
+        <ul>
+            <li><a href ="prueba.html"><span class ="uno"> <i class= "icon icon-home "> </i> </span>Inicio</a></li>
+            <li><a href ="nosotros.html"><span class ="dos"> <i class= "icon icon-info"> </i> </span>Sobre nosotros</a>
+            <ul>
+                <li><a href="nosotros.html">¿Quiénes somos?</a></li>
+                <li><a href="nosotros.html">Mision y Vision</a></li>
+                <li><a href="nosotros.html">Nuestros valores</a></li>
+            </ul>
+            </li>
+            <li><a href ="registro.html"><span class ="tres"> <i class= "icon icon-registro"> </i> </span>Servicios</a>
+            </li>
+            <li><a href ="contacto.html"><span class ="cinco"> <i class= "icon icon-libro"> </i> </span>Contactos</a></li>
+        </ul>
+    </nav>
+    <hr size="2px" >
+</header>
+<div class="contenedor1">
+        <span class ="enca1"><a name ="1"> Obtencion de actas de nacimiento </span></a>
+      </div>
+      <br>
+<div class="entero">
+    <div class="cuadro">
+        <div class="contenedor">
+                <span class ="enca"><a name ="1"> Registra tu solictud</span></a>
+              </div>
+              <br>
+            <form action="guardar.php" method="post">
+                <label for="Nombre"> Nombre:</label> <input type="text"  name="name" placeholder="Escribe tu nombre" required/>
+                <label for="Apellido"> Apellido:</label> <input type="text" name="lastn" placeholder="Escribe tu apellido"required/>
+                  <label for="Telefono"> Telefono: </label><input type="number" name="num" placeholder="Escribe tu telefono" required/>
+                <label for="Cedula"> Cedula: </label><input type="number" name="ced" placeholder="Escribe tu cedula"required/>
+                <label for="Num_acta"> Numero de acta: </label><input type="number" name="num_acta" placeholder="Escribe el numero del acta"required/>
+                <label  for="Num_folio"> Folio de acta: </label><input type="number" name="folio"   placeholder="Escribe el folio del acta"required/>
+                 <input type="submit" value="Enviar" >
+            </form>
+    </div>
+    <div class="cuadro2">
+        <div class="contenedor">
+                <span class ="enca"><a name ="1"> Generar acta</span></a>
+              </div>
+              <br>
+            <form action="pdf.php" method="post">
+                <label  for="Reporte"> Para generar el acta debe de buscarla por su cedula </label><input type="text" name="buscar" placeholder="Escribe el numero de cedula"required onclick="this.value=''"; >
+                     <input type="submit" value="Generar" >
+            </form>
+           <br>
+           <br>
+           <br>
+            <div class="cuadro1">
+            <span class ="enca"><a name ="1"> Pago de solicitud</span></a>
+                <br>
+                <br>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_xclick">
+                <input type="hidden" name="business" value="jose.05perez08@gmail.com">
+                <input type="hidden" name="lc" value="ES">
+                <input type="hidden" name="item_name" value="Acta de nacimiento">
+                <input type="hidden" name="amount" value="300.00">
+                <input type="hidden" name="currency_code" value="USD">
+                <input type="hidden" name="button_subtype" value="services">
+                <input type="hidden" name="no_note" value="0">
+                <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+                <input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal, la forma rápida y segura de pagar en Internet.">
+                <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                </form>
+                </div>
+     </div>
+            
+ </div>
+
+         
+            
+
+<br>
+<br>
+
+
+
+<footer><p>©Junta Central Electoral | Derechos reservados| GOB | <a href="#1">Subir </a></p><left><p><i class= "icon icon-twitter"> </i><i class= "icon icon-phone"></i> <i class= "icon icon-instagram"> </i><i class= "icon  icon-facebook"></i></p><left>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+  }
+  header
+  {
+    margin-top: 10px;
+    width: 98%;
+    height: 130px;
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    background: #fff;
+  }
+
+  
+  img{
+    position: relative;
+    margin-top: 0px;
+    margin-left: 105px;
+    
+  }
+  
+  nav {
+    top:-20px;
+    position: absolute;
+    left: 150px;
+    right: 10px;
+    margin: 20px auto;
+    max-width: 975px;
+  }
+  nav  ul{
+    list-style: none;
+  }
+  
+  nav > ul{
+    display: table;
+    width: 100%;
+    background: rgba(146, 149, 148, .7) ;
+    position: relative;
+  }
+  
+  nav > ul li {
+    display: table-cell;
+  }
+  
+  nav > ul > li:hover > ul{
+  display: block;
+  height: 100%;
+  
+  } 
+  nav> ul > li> ul {
+    display: block;
+    position: absolute;
+    background: rgba(146, 149, 148, .7);
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    height:0%;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  
+  
+  
+  
+  nav > ul li a {
+    color: #fff;
+    display:block;
+    line-height: 20px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  
+  nav > ul > li> ul> li a:hover {
+   background: #828282 ;
+   
+  }
+  nav > ul > li > a span {
+    background: #174459;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: -55px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  
+  nav > ul> li > a span .icon{
+  display: block;
+  line-height: 60px;
+  }
+  
+  nav > ul > li > a:hover > span{
+    top:0;
+  }
+  
+  nav ul li a .uno{
+    background: #85C1E9   ;
+  }
+  nav ul li a .dos{
+    background: #EC7063  ;
+  }
+  nav ul li a .tres{
+    background: #EDBB99    ;
+  }
+  nav ul li a .cuatro{
+    background: #1ABC9C ;
+  }
+  nav ul li a .cinco{
+    background: #C39BD3  ;
+  }
+  nav ul li a .seis{
+    background: #7FB3D5;
+  }
+  footer{
+    background: rgba(250, 133, 0, 0.5);
+    padding: 10px 0px;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    font-size: 20px;
+  }
+  footer a{
+    text-decoration: none;
+    color: #fff;
+    
+  
+  }
+  footer a:hover{
+    text-decoration: underline;
+  }
+  footer a:visited{
+    color:#fff;
+  }
+
+  .enca{
+
+    font-size: 50px;
+    font-weight: bold;
+    color:  #B0AEAC;
+    font-family: Century Gothic;
+    text-align: center;
+    border-bottom: 0.5px ridge #FB8304;
+  
+  }
+  .contenedor{
+    width: 100%;
+    
+    margin-top: 30px;
+    overflow: hidden;
+    font-family: Tahoma;
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+  }
+ .enca1{
+     margin: 10px;
+    font-size: 35px;
+    font-weight: bold;
+    color:  #B0AEAC;
+    font-family: Century Gothic;
+    text-align: center;
+    border-bottom: 0.5px ridge #FB8304;
+  }
+.contenido{
+    margin: 10px;
+    font-family: tahoma;
+    font-size: 18px;
+
+
+}
+.red ul{
+    list-style: none;
+}
+ .red ul li{
+
+    margin: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color:  #B0AEAC;
+    font-family: Century Gothic;
+    text-align: left;
+    
+
+ }
+ .red table td{
+    width: 60%;
+
+ }
+ .red ul li i.icon{   
+  color:  #FB8304;
+
+}
